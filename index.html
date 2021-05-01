@@ -11,6 +11,7 @@
     <!-- <link rel="stylesheet" media="screen and (min-width: 800px)" href="widescreen.css"> -->
     <!-- <link rel="stylesheet" media="screen and (max-width: 500px)" href="widescreen.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
         .main-home{
             background:    linear-gradient(
@@ -23,9 +24,7 @@
         }
     </style>
 </head>
-<body onload="myFuction()" onscroll="scroll()" style="margin:0;">
-    <div id="loader">
-    </div>
+<body  onscroll="scroll()" style="margin:0;">
 
     <section class="container-fluids main-home" id="Home" >
      <div class="fulldisplay">
@@ -151,7 +150,7 @@
                         class="fab fa-facebook p-3"></i></a>
                 <a href="https://instagram.com/x_sam__xx?igshid=qm6bc5xqdrhv" class="instagram" target="_blank" rel="noopener"><i
                         class="fab fa-instagram p-3"></i></a>
-                <a href="" class="github" target="_blank" rel="noopener"><i
+                <a href="https://sam-web-designer.github.io/portfolio/" class="github" target="_blank" rel="noopener"><i
                         class="fab fa-github p-3"></i></a>
                 <a href="" class="telegram" target="_blank" rel="noopener"><i
                         class="fab fa-telegram p-3"></i>
@@ -160,32 +159,11 @@
             <div class="col-md-12 text-center details">
                 <p>Designed with <span class="heart" style="color: red;">&hearts;</span> by <a
                         href="https://www.facebook.com/profile.php?id=100010339155035" target="_blank" rel="noopener">Sameer Ali</a></p><br/>
-                <p>&copy; 2021 Vipul Jha. All rights reserved.</p>
+                <p>&copy; 2021 Sameer Ali. All rights reserved.</p>
             </div>
         </div>
     </section>
-    <script >
-        function scroll(){
-            const logo = document.querySelector('#nav')
 
-            const getOffset = () => {
-            if(window.pageYOffset > 100){
-                logo.style.backgroundColor = 'rgb(0,0,0,.9)'
-                logo.style.transition = 'background .5s ease-out'
-                logo.style.boxShadow = '0px 1px 4px black'
-            }
-            if(window.pageYOffset < 100){
-                logo.style.backgroundColor = 'rgba(0,0,0,0)'
-                logo.style.transition = 'background .5s ease-out'
-                logo.style.boxShadow = 'none' 
-            }
-            }
-            window.addEventListener('scroll', getOffset)
-        }
-     //   $(window).scroll(function() {
-       // 	$('nav').toggleClass('scrolled',$(this).scrollTop()>50);
-       //    });
-     </script>
     <script src="js/typed.min.js"></script>
     <script>
         var preloader = document.getElementById('loader');
@@ -216,7 +194,6 @@
        src="https://code.jquery.com/jquery-3.6.0.min.js"
        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
        crossorigin="anonymous"></script>
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
        

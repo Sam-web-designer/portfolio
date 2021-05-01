@@ -165,15 +165,14 @@
     </section>
 
     <script src="js/typed.min.js"></script>
-    <script>
-        var preloader = document.getElementById('loader');
-       function  myFuction(){
-        setTimeout(function(){ $('#loader').fadeIn(); }, 1000);
-        setTimeout(function(){ $('#loader').fadeOut('slow'); }, 3000);
-       };
-    </script>
-    
-  
+        <script>
+            $(document).ready(function(){
+                $(window).scroll(function(){
+                    $('nav').toggleClass('scrolled',$(this).scrollTop()>50);
+                });
+            });
+        </script>
+      
     <script>
         var typed = new Typed('#text', {
           strings: [
